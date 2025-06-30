@@ -3,7 +3,7 @@ import axios from 'axios';
 interface LoginResponse {
   role: string;
 }
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'http://localhost:5000/api';
 export const loginAdmin = async (email: string, motDePasse: string): Promise<LoginResponse> => {
   const response = await axios.post(`${API_URL}/auth/login`, {
     email,

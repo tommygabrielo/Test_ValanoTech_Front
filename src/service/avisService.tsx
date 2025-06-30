@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Avis } from '../context/AvisContext';
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'http://localhost:5000/api';
 
 export const addAvis = async (note: number, commentaire: string, id_user: number, id_produit: number) => {
   return axios.post(`${API_URL}/avis`, {
