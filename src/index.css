@@ -1,13 +1,23 @@
 body {
+ background-image: url('./background.png');
+  background-size: cover;            /* L'image remplit toujours tout l'écran */
+  background-position: center center; /* L'image reste bien centrée même si elle est redimensionnée */
+  background-repeat: repeat;      /* Pas de répétition */
+  height: 100vh;                    /* Hauteur minimale : 100% de la hauteur de la fenêtre */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; 
+
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }

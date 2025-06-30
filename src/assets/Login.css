@@ -1,0 +1,102 @@
+.login-container {
+    overflow-y: hidden; /* ✅ Supprime le scroll horizontal */
+    max-width: 400px;
+    margin: 50px auto -50px auto;
+    background-color: #222;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-error {
+    color: #ff4d4f;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-input {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    font-family: Poppins, sans-serif !important;
+    font-size: 1rem;
+    background-color: #410c0c;
+}
+
+.login-input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #580c0c;
+}
+
+.login-button {
+    padding: 12px;
+    background-color: crimson;
+    font-family: Poppins, sans-serif !important;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: rgb(177, 34, 34);
+}
+
+.back-button {
+    padding: 12px;
+    margin-top: 20px;
+    font-family: Poppins, sans-serif !important;
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #777;
+}
+
+.test-account-info {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.test-account-info p {
+  margin: 5px 0;
+  color: #ddd;
+}
+
+.test-account-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.test-account-button:hover {
+  background-color: #777;
+}
