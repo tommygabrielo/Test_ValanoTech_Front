@@ -1,5 +1,5 @@
 import React, { createContext, ReactNode, useState } from 'react';
-import { fetchAvisByProduit, addAvis } from '../service/avisService';
+import { fetchAvisByProduit } from '../service/avisService';
 
 export interface Avis {
   id: number;
