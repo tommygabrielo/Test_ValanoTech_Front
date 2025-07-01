@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState, useCallback } from 'react';
 import { AvisContext } from '../context/AvisContext';
 import '../assets/MindList.css';
 
@@ -22,7 +22,7 @@ const MindList: React.FC<Props> = ({ produitId, refreshTrigger  }) => {
   const [search, setSearch] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
 
-  const fetchAvis = async () => {
+  const fetchAvis = useCallback(async () => {
     setLoading(true);
     try {
       const data = await getAvis(produitId, sort, search);
@@ -32,11 +32,11 @@ const MindList: React.FC<Props> = ({ produitId, refreshTrigger  }) => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [getAvis, produitId, sort, search]);
 
   useEffect(() => {
     fetchAvis();
-  }, [sort, search, produitId, refreshTrigger ]);
+  }, [fetchAvis, refreshTrigger]);
 
   const renderStars = (note: number) => {
     const totalStars = 5;
