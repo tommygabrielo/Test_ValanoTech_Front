@@ -29,7 +29,7 @@ const Login = () => {
     };
 
     const fillTestAccount = () => {
-        setEmail('admin@test.com');
+        setEmail('admin@tom.com');
         setMotDePasse('admin123');
     };
 
@@ -43,7 +43,7 @@ const Login = () => {
                 <h2>Connexion Administrateur</h2>
                 <div className="test-account-info">
                     <p>🔑 Compte existant :</p>
-                    <p><strong>Email :</strong> admin@test.com</p>
+                    <p><strong>Email :</strong> admin@tom.com</p>
                     <p><strong>Mot de passe :</strong> admin123</p>
                     <button type="button" onClick={fillTestAccount} className="test-account-button">
                         Remplir automatiquement
