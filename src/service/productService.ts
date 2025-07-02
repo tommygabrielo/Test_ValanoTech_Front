@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Product } from '../context/ProductContext';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://test-valanotech-back-2.onrender.com/api';
 
 export const fetchAllProducts = async (): Promise<Product[]> => {
   const response = await axios.get<Product[]>(API_URL);

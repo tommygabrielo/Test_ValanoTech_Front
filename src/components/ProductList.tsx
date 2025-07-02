@@ -38,7 +38,13 @@ const ProductList: React.FC<Props> = ({ onAvisAdded }) => {
     containerRef.current?.scrollBy({ left: 300, behavior: 'smooth' });
   };
 
-  if (loading) return <p>Chargement...</p>;
+ if (loading) {
+  return (
+    <div className="loading-container">
+      <div className="spinner"></div>
+    </div>
+  );
+}
 
   return (
     <div className="product-list-wrapper">
